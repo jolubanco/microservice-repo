@@ -1,6 +1,4 @@
 spring:
-  aplication:
-    name: 'service-cliente'
   datasource:
     username: sa
     password: ''
