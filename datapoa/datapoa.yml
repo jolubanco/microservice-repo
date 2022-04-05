@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:integracao-data-poa-db
+    driverClassName: org.h2.Driver
+    password: ''
+  h2:
+    console:
+      enabled: 'true'
+      path: /h2-console
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  jpa:
+    database-palataform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
