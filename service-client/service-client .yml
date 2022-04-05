@@ -2,9 +2,15 @@ spring:
   aplication:
     name: 'service-cliente'
   datasource:
-    password: root
-    username: root
-    url: jdbc:h2:mem:servico-cliente
-  jpa: 
+    username: sa
+    password: ''
+    url: jdbc:h2:mem:spring-config-client
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: 'true'
+      path: /h2-console
+  jpa:
+    database-palataform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
